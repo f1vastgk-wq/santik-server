@@ -1,0 +1,14 @@
+name: Build SantikCore
+on: [push, workflow_dispatch]
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-java@v4
+        with: { distribution: temurin, java-version: '21' }
+      - run: mvn -B -f plugins-src/SantikCore/pom.xml package
+      - uses: actions/upload-artifact@v4
+        with:
+          name: SantikCore
+          path: plugins-src/SantikCore/target/SantikCore.jar
