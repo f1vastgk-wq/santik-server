@@ -1,0 +1,91 @@
+# SANTIK — магазин. Цены в SC. Редактируйте без пересборки: /santik reload
+# sell = сколько магазин платит игроку; buy = сколько игрок платит магазину (0 = не продаётся)
+# limit = сколько штук игрок может продать магазину за 1 час (защита от бесконечных денег)
+# auction = можно ли выставлять на аукцион. note = пояснение по балансу.
+categories:
+  blocks: {name: 'Блоки и строительные материалы', icon: STONE_BRICKS}
+  ores: {name: 'Руды и минералы', icon: DIAMOND}
+  plants: {name: 'Растения и еда', icon: WHEAT}
+  rare: {name: 'Редкие ресурсы', icon: ENDER_PEARL}
+  tools: {name: 'Инструменты', icon: DIAMOND_PICKAXE}
+  armor: {name: 'Броня', icon: IRON_CHESTPLATE}
+  other: {name: 'Прочие полезные предметы', icon: CHEST}
+items:
+  COBBLESTONE: {category: blocks, ru: 'Булыжник', sell: 0.1, buy: 0.4, limit: 2048, auction: true, note: 'Дешёвые массовые ресурсы: низкая цена + высокий лимит, покупка у магазина в 4 раза дороже.'}
+  STONE: {category: blocks, ru: 'Камень', sell: 0.15, buy: 0.6, limit: 1024, auction: true, note: 'Дешёвые массовые ресурсы: низкая цена + высокий лимит, покупка у магазина в 4 раза дороже.'}
+  OAK_LOG: {category: blocks, ru: 'Дубовое бревно', sell: 0.6, buy: 2.4, limit: 512, auction: true, note: 'Дешёвые массовые ресурсы: низкая цена + высокий лимит, покупка у магазина в 4 раза дороже.'}
+  SPRUCE_LOG: {category: blocks, ru: 'Еловое бревно', sell: 0.6, buy: 2.4, limit: 512, auction: true, note: 'Дешёвые массовые ресурсы: низкая цена + высокий лимит, покупка у магазина в 4 раза дороже.'}
+  BIRCH_LOG: {category: blocks, ru: 'Берёзовое бревно', sell: 0.6, buy: 2.4, limit: 512, auction: true, note: 'Дешёвые массовые ресурсы: низкая цена + высокий лимит, покупка у магазина в 4 раза дороже.'}
+  CHERRY_LOG: {category: blocks, ru: 'Вишнёвое бревно', sell: 1.0, buy: 4.0, limit: 256, auction: true, note: 'Дешёвые массовые ресурсы: низкая цена + высокий лимит, покупка у магазина в 4 раза дороже.'}
+  OAK_PLANKS: {category: blocks, ru: 'Дубовые доски', sell: 0.15, buy: 0.6, limit: 1024, auction: true, note: 'Дешёвые массовые ресурсы: низкая цена + высокий лимит, покупка у магазина в 4 раза дороже.'}
+  DIRT: {category: blocks, ru: 'Земля', sell: 0.05, buy: 0.2, limit: 2048, auction: true, note: 'Дешёвые массовые ресурсы: низкая цена + высокий лимит, покупка у магазина в 4 раза дороже.'}
+  SAND: {category: blocks, ru: 'Песок', sell: 0.2, buy: 0.8, limit: 1024, auction: true, note: 'Дешёвые массовые ресурсы: низкая цена + высокий лимит, покупка у магазина в 4 раза дороже.'}
+  GRAVEL: {category: blocks, ru: 'Гравий', sell: 0.15, buy: 0.6, limit: 1024, auction: true, note: 'Дешёвые массовые ресурсы: низкая цена + высокий лимит, покупка у магазина в 4 раза дороже.'}
+  NETHERRACK: {category: blocks, ru: 'Незерак', sell: 0.05, buy: 0.2, limit: 2048, auction: true, note: 'Дешёвые массовые ресурсы: низкая цена + высокий лимит, покупка у магазина в 4 раза дороже.'}
+  GLASS: {category: blocks, ru: 'Стекло', sell: 0.4, buy: 1.6, limit: 512, auction: true, note: 'Дешёвые массовые ресурсы: низкая цена + высокий лимит, покупка у магазина в 4 раза дороже.'}
+  OBSIDIAN: {category: blocks, ru: 'Обсидиан', sell: 8.0, buy: 32.0, limit: 128, auction: true, note: 'Дешёвые массовые ресурсы: низкая цена + высокий лимит, покупка у магазина в 4 раза дороже.'}
+  QUARTZ_BLOCK: {category: blocks, ru: 'Блок кварца', sell: 12.0, buy: 48.0, limit: 64, auction: true, note: 'Дешёвые массовые ресурсы: низкая цена + высокий лимит, покупка у магазина в 4 раза дороже.'}
+  COAL: {category: ores, ru: 'Уголь', sell: 1.5, buy: 6.0, limit: 512, auction: true, note: 'Цена слитка = ценность добычи; покупка x4, чтобы магазин не был дешевле добычи.'}
+  COPPER_INGOT: {category: ores, ru: 'Медный слиток', sell: 1.5, buy: 6.0, limit: 512, auction: true, note: 'Цена слитка = ценность добычи; покупка x4, чтобы магазин не был дешевле добычи.'}
+  IRON_INGOT: {category: ores, ru: 'Железный слиток', sell: 6.0, buy: 24.0, limit: 256, auction: true, note: 'Цена слитка = ценность добычи; покупка x4, чтобы магазин не был дешевле добычи.'}
+  GOLD_INGOT: {category: ores, ru: 'Золотой слиток', sell: 12.0, buy: 48.0, limit: 128, auction: true, note: 'Цена слитка = ценность добычи; покупка x4, чтобы магазин не был дешевле добычи.'}
+  REDSTONE: {category: ores, ru: 'Редстоун', sell: 1.0, buy: 4.0, limit: 512, auction: true, note: 'Цена слитка = ценность добычи; покупка x4, чтобы магазин не был дешевле добычи.'}
+  LAPIS_LAZULI: {category: ores, ru: 'Лазурит', sell: 2.0, buy: 8.0, limit: 256, auction: true, note: 'Цена слитка = ценность добычи; покупка x4, чтобы магазин не был дешевле добычи.'}
+  QUARTZ: {category: ores, ru: 'Кварц', sell: 3.0, buy: 12.0, limit: 256, auction: true, note: 'Цена слитка = ценность добычи; покупка x4, чтобы магазин не был дешевле добычи.'}
+  AMETHYST_SHARD: {category: ores, ru: 'Осколок аметиста', sell: 4.0, buy: 16.0, limit: 128, auction: true, note: 'Цена слитка = ценность добычи; покупка x4, чтобы магазин не был дешевле добычи.'}
+  EMERALD: {category: ores, ru: 'Изумруд', sell: 40.0, buy: 160.0, limit: 64, auction: true, note: 'Цена слитка = ценность добычи; покупка x4, чтобы магазин не был дешевле добычи.'}
+  DIAMOND: {category: ores, ru: 'Алмаз', sell: 80.0, buy: 320.0, limit: 32, auction: true, note: 'Цена слитка = ценность добычи; покупка x4, чтобы магазин не был дешевле добычи.'}
+  WHEAT: {category: plants, ru: 'Пшеница', sell: 1.0, buy: 4.0, limit: 512, auction: true, note: 'Низкая цена: фермы автоматизируются, поэтому доход ограничен часовым лимитом.'}
+  CARROT: {category: plants, ru: 'Морковь', sell: 0.8, buy: 3.2, limit: 512, auction: true, note: 'Низкая цена: фермы автоматизируются, поэтому доход ограничен часовым лимитом.'}
+  POTATO: {category: plants, ru: 'Картофель', sell: 0.8, buy: 3.2, limit: 512, auction: true, note: 'Низкая цена: фермы автоматизируются, поэтому доход ограничен часовым лимитом.'}
+  BEETROOT: {category: plants, ru: 'Свёкла', sell: 0.8, buy: 3.2, limit: 512, auction: true, note: 'Низкая цена: фермы автоматизируются, поэтому доход ограничен часовым лимитом.'}
+  SUGAR_CANE: {category: plants, ru: 'Сахарный тростник', sell: 0.5, buy: 2.0, limit: 512, auction: true, note: 'Низкая цена: фермы автоматизируются, поэтому доход ограничен часовым лимитом.'}
+  PUMPKIN: {category: plants, ru: 'Тыква', sell: 1.5, buy: 6.0, limit: 256, auction: true, note: 'Низкая цена: фермы автоматизируются, поэтому доход ограничен часовым лимитом.'}
+  MELON_SLICE: {category: plants, ru: 'Долька арбуза', sell: 0.3, buy: 1.2, limit: 512, auction: true, note: 'Низкая цена: фермы автоматизируются, поэтому доход ограничен часовым лимитом.'}
+  APPLE: {category: plants, ru: 'Яблоко', sell: 2.0, buy: 8.0, limit: 256, auction: true, note: 'Низкая цена: фермы автоматизируются, поэтому доход ограничен часовым лимитом.'}
+  BREAD: {category: plants, ru: 'Хлеб', sell: 3.0, buy: 12.0, limit: 256, auction: true, note: 'Низкая цена: фермы автоматизируются, поэтому доход ограничен часовым лимитом.'}
+  COOKED_BEEF: {category: plants, ru: 'Жареная говядина', sell: 4.0, buy: 16.0, limit: 256, auction: true, note: 'Низкая цена: фермы автоматизируются, поэтому доход ограничен часовым лимитом.'}
+  COOKED_PORKCHOP: {category: plants, ru: 'Жареная свинина', sell: 4.0, buy: 16.0, limit: 256, auction: true, note: 'Низкая цена: фермы автоматизируются, поэтому доход ограничен часовым лимитом.'}
+  COOKED_CHICKEN: {category: plants, ru: 'Жареная курица', sell: 3.0, buy: 12.0, limit: 256, auction: true, note: 'Низкая цена: фермы автоматизируются, поэтому доход ограничен часовым лимитом.'}
+  BAKED_POTATO: {category: plants, ru: 'Печёный картофель', sell: 1.0, buy: 4.0, limit: 256, auction: true, note: 'Низкая цена: фермы автоматизируются, поэтому доход ограничен часовым лимитом.'}
+  COCOA_BEANS: {category: plants, ru: 'Какао-бобы', sell: 1.0, buy: 4.0, limit: 256, auction: true, note: 'Низкая цена: фермы автоматизируются, поэтому доход ограничен часовым лимитом.'}
+  BAMBOO: {category: plants, ru: 'Бамбук', sell: 0.3, buy: 1.2, limit: 512, auction: true, note: 'Низкая цена: фермы автоматизируются, поэтому доход ограничен часовым лимитом.'}
+  OAK_SAPLING: {category: plants, ru: 'Саженец дуба', sell: 1.0, buy: 4.0, limit: 128, auction: true, note: 'Низкая цена: фермы автоматизируются, поэтому доход ограничен часовым лимитом.'}
+  CHERRY_SAPLING: {category: plants, ru: 'Саженец вишни', sell: 5.0, buy: 20.0, limit: 64, auction: true, note: 'Низкая цена: фермы автоматизируются, поэтому доход ограничен часовым лимитом.'}
+  ENDER_PEARL: {category: rare, ru: 'Жемчуг Края', sell: 25.0, buy: 100.0, limit: 64, auction: true, note: 'Редкие ресурсы. Если buy=0, магазин их НЕ продаёт (только скупает, лимит ниже).'}
+  BLAZE_ROD: {category: rare, ru: 'Огненный стержень', sell: 12.0, buy: 0.0, limit: 64, auction: true, note: 'Редкие ресурсы. Если buy=0, магазин их НЕ продаёт (только скупает, лимит ниже).'}
+  SLIME_BALL: {category: rare, ru: 'Слизь', sell: 4.0, buy: 16.0, limit: 128, auction: true, note: 'Редкие ресурсы. Если buy=0, магазин их НЕ продаёт (только скупает, лимит ниже).'}
+  GUNPOWDER: {category: rare, ru: 'Порох', sell: 3.0, buy: 12.0, limit: 256, auction: true, note: 'Редкие ресурсы. Если buy=0, магазин их НЕ продаёт (только скупает, лимит ниже).'}
+  BONE: {category: rare, ru: 'Кость', sell: 1.0, buy: 4.0, limit: 256, auction: true, note: 'Редкие ресурсы. Если buy=0, магазин их НЕ продаёт (только скупает, лимит ниже).'}
+  STRING: {category: rare, ru: 'Нить', sell: 1.0, buy: 4.0, limit: 256, auction: true, note: 'Редкие ресурсы. Если buy=0, магазин их НЕ продаёт (только скупает, лимит ниже).'}
+  GHAST_TEAR: {category: rare, ru: 'Слеза гаста', sell: 60.0, buy: 0.0, limit: 16, auction: true, note: 'Редкие ресурсы. Если buy=0, магазин их НЕ продаёт (только скупает, лимит ниже).'}
+  SHULKER_SHELL: {category: rare, ru: 'Панцирь шалкера', sell: 80.0, buy: 0.0, limit: 16, auction: true, note: 'Редкие ресурсы. Если buy=0, магазин их НЕ продаёт (только скупает, лимит ниже).'}
+  EXPERIENCE_BOTTLE: {category: rare, ru: 'Пузырёк опыта', sell: 8.0, buy: 32.0, limit: 128, auction: true, note: 'Редкие ресурсы. Если buy=0, магазин их НЕ продаёт (только скупает, лимит ниже).'}
+  GOLDEN_APPLE: {category: rare, ru: 'Золотое яблоко', sell: 90.0, buy: 360.0, limit: 32, auction: true, note: 'Редкие ресурсы. Если buy=0, магазин их НЕ продаёт (только скупает, лимит ниже).'}
+  TOTEM_OF_UNDYING: {category: rare, ru: 'Тотем бессмертия', sell: 600.0, buy: 0.0, limit: 4, auction: true, note: 'Редкие ресурсы. Если buy=0, магазин их НЕ продаёт (только скупает, лимит ниже).'}
+  NETHERITE_SCRAP: {category: rare, ru: 'Незеритовый лом', sell: 150.0, buy: 0.0, limit: 8, auction: true, note: 'Редкие ресурсы. Если buy=0, магазин их НЕ продаёт (только скупает, лимит ниже).'}
+  NETHERITE_INGOT: {category: rare, ru: 'Незеритовый слиток', sell: 650.0, buy: 0.0, limit: 4, auction: true, note: 'Редкие ресурсы. Если buy=0, магазин их НЕ продаёт (только скупает, лимит ниже).'}
+  IRON_PICKAXE: {category: tools, ru: 'Железная кирка', sell: 14.0, buy: 56.0, limit: 16, auction: true, note: 'Цена = ~80% стоимости материалов, чтобы крафт и перепродажа не давали прибыли.'}
+  IRON_AXE: {category: tools, ru: 'Железный топор', sell: 14.0, buy: 56.0, limit: 16, auction: true, note: 'Цена = ~80% стоимости материалов, чтобы крафт и перепродажа не давали прибыли.'}
+  IRON_SHOVEL: {category: tools, ru: 'Железная лопата', sell: 4.5, buy: 18.0, limit: 16, auction: true, note: 'Цена = ~80% стоимости материалов, чтобы крафт и перепродажа не давали прибыли.'}
+  IRON_HOE: {category: tools, ru: 'Железная мотыга', sell: 10.0, buy: 40.0, limit: 16, auction: true, note: 'Цена = ~80% стоимости материалов, чтобы крафт и перепродажа не давали прибыли.'}
+  IRON_SWORD: {category: tools, ru: 'Железный меч', sell: 10.0, buy: 40.0, limit: 16, auction: true, note: 'Цена = ~80% стоимости материалов, чтобы крафт и перепродажа не давали прибыли.'}
+  DIAMOND_PICKAXE: {category: tools, ru: 'Алмазная кирка', sell: 190.0, buy: 760.0, limit: 8, auction: true, note: 'Цена = ~80% стоимости материалов, чтобы крафт и перепродажа не давали прибыли.'}
+  DIAMOND_AXE: {category: tools, ru: 'Алмазный топор', sell: 190.0, buy: 760.0, limit: 8, auction: true, note: 'Цена = ~80% стоимости материалов, чтобы крафт и перепродажа не давали прибыли.'}
+  DIAMOND_SHOVEL: {category: tools, ru: 'Алмазная лопата', sell: 62.0, buy: 248.0, limit: 8, auction: true, note: 'Цена = ~80% стоимости материалов, чтобы крафт и перепродажа не давали прибыли.'}
+  DIAMOND_SWORD: {category: tools, ru: 'Алмазный меч', sell: 125.0, buy: 500.0, limit: 8, auction: true, note: 'Цена = ~80% стоимости материалов, чтобы крафт и перепродажа не давали прибыли.'}
+  IRON_HELMET: {category: armor, ru: 'Железный шлем', sell: 24.0, buy: 96.0, limit: 8, auction: true, note: 'Цена = ~80% стоимости материалов; незеритовая экипировка не торгуется магазином.'}
+  IRON_CHESTPLATE: {category: armor, ru: 'Железный нагрудник', sell: 38.0, buy: 152.0, limit: 8, auction: true, note: 'Цена = ~80% стоимости материалов; незеритовая экипировка не торгуется магазином.'}
+  IRON_LEGGINGS: {category: armor, ru: 'Железные поножи', sell: 33.0, buy: 132.0, limit: 8, auction: true, note: 'Цена = ~80% стоимости материалов; незеритовая экипировка не торгуется магазином.'}
+  IRON_BOOTS: {category: armor, ru: 'Железные ботинки', sell: 19.0, buy: 76.0, limit: 8, auction: true, note: 'Цена = ~80% стоимости материалов; незеритовая экипировка не торгуется магазином.'}
+  DIAMOND_HELMET: {category: armor, ru: 'Алмазный шлем', sell: 320.0, buy: 1280.0, limit: 4, auction: true, note: 'Цена = ~80% стоимости материалов; незеритовая экипировка не торгуется магазином.'}
+  DIAMOND_CHESTPLATE: {category: armor, ru: 'Алмазный нагрудник', sell: 510.0, buy: 2040.0, limit: 4, auction: true, note: 'Цена = ~80% стоимости материалов; незеритовая экипировка не торгуется магазином.'}
+  DIAMOND_LEGGINGS: {category: armor, ru: 'Алмазные поножи', sell: 450.0, buy: 1800.0, limit: 4, auction: true, note: 'Цена = ~80% стоимости материалов; незеритовая экипировка не торгуется магазином.'}
+  DIAMOND_BOOTS: {category: armor, ru: 'Алмазные ботинки', sell: 255.0, buy: 1020.0, limit: 4, auction: true, note: 'Цена = ~80% стоимости материалов; незеритовая экипировка не торгуется магазином.'}
+  CHEST: {category: other, ru: 'Сундук', sell: 1.0, buy: 4.0, limit: 128, auction: true, note: 'Вспомогательные предметы.'}
+  FURNACE: {category: other, ru: 'Печь', sell: 1.0, buy: 4.0, limit: 128, auction: true, note: 'Вспомогательные предметы.'}
+  CRAFTING_TABLE: {category: other, ru: 'Верстак', sell: 0.5, buy: 2.0, limit: 128, auction: true, note: 'Вспомогательные предметы.'}
+  TORCH: {category: other, ru: 'Факел', sell: 0.1, buy: 0.4, limit: 512, auction: true, note: 'Вспомогательные предметы.'}
+  ARROW: {category: other, ru: 'Стрела', sell: 0.3, buy: 1.2, limit: 512, auction: true, note: 'Вспомогательные предметы.'}
+  SHEARS: {category: other, ru: 'Ножницы', sell: 9.0, buy: 36.0, limit: 16, auction: true, note: 'Вспомогательные предметы.'}
+  BUCKET: {category: other, ru: 'Ведро', sell: 14.0, buy: 56.0, limit: 16, auction: true, note: 'Вспомогательные предметы.'}

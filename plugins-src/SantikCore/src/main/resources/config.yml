@@ -1,0 +1,66 @@
+# ===== SANTIK — основной конфиг (после правки: /santik reload) =====
+owner:
+  name: "reuzc"
+  uuid: ""          # заполнится автоматически, когда владелец впервые войдёт и авторизуется
+worlds:
+  captcha: santik_captcha
+  auth: santik_auth
+  lobby: santik_lobby
+  anarchy: anarchy_1          # + anarchy_1_nether и anarchy_1_the_end создаются автоматически
+protection:
+  anarchy-spawn-radius: 50
+auth:
+  min-password-length: 6
+  max-password-length: 64
+  max-login-attempts: 5
+  ip-lock-minutes: 5
+  login-timeout-seconds: 150
+  pbkdf2-iterations: 210000
+  max-connections-per-ip-10s: 5
+captcha:
+  length: 5
+  ttl-seconds: 60
+  max-attempts: 3
+  max-regenerations: 5
+  max-concurrent: 40
+  ip-lock-minutes: 10
+rtp:
+  border-radius: 5000       # размер границы мира = 2 * радиус
+  min-distance: 600
+  max-distance: 4800
+  cooldown-seconds: 60
+  min-gap-between-points: 150
+  max-attempts: 12
+homes:
+  max: 3
+  cooldown-seconds: 10
+spawn-cooldown-seconds: 10
+tpa:
+  cooldown-seconds: 15
+  expire-seconds: 60
+economy:
+  start-balance: 100        # SC, выдаётся один раз новому аккаунту
+  new-account-minutes: 30   # новые аккаунты не могут /pay и продавать на аукционе
+  pay-max-single: 100000
+  pay-cooldown-seconds: 5
+auction:
+  fee-percent: 5
+  duration-hours: 48
+  max-active-lots: 10
+  max-price: 10000000
+  min-price-ratio-of-shop-sell: 0.5
+  hard-min-price: 1
+chat:
+  flood-delay-ms: 1200
+  repeat-block-seconds: 10
+  command-limit: 10          # команд за 5 секунд
+backup:
+  interval-hours: 6
+  keep: 14
+rules:
+  - "1. Запрещены читы, х-рей, дюпы и эксплуатация багов."
+  - "2. Запрещены сторонние моды/клиенты, дающие преимущество."
+  - "3. Запрещено разрушать защищённый спавн и лобби."
+  - "4. Запрещены обман и мошенничество в торговле."
+  - "5. Запрещены оскорбления, спам и реклама."
+  - "6. Анархия: PvP, грифинг и рейды вне спавна разрешены. Баги — в личные сообщения админам."

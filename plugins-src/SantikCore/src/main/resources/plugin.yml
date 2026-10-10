@@ -1,0 +1,48 @@
+name: SantikCore
+version: 0.2.0
+main: dev.santik.core.SantikCore
+api-version: '1.21'
+description: SANTIK NETWORK — вход, капча, лобби, анархия, экономика, аукцион
+commands:
+  reg: {description: "Регистрация пароля", aliases: [register]}
+  login: {description: "Вход в аккаунт", aliases: [l]}
+  spawn: {description: "На спавн"}
+  lobby: {description: "В главное лобби"}
+  rtp: {description: "Случайная телепортация"}
+  sethome: {description: "Установить дом"}
+  home: {description: "Телепорт домой"}
+  delhome: {description: "Удалить дом"}
+  homes: {description: "Список домов"}
+  ah: {description: "Аукцион", aliases: [auction]}
+  bal: {description: "Баланс", aliases: [balance]}
+  pay: {description: "Перевести SC"}
+  help: {description: "Список команд"}
+  rules: {description: "Правила"}
+  msg: {description: "Личное сообщение"}
+  r: {description: "Ответить"}
+  ignore: {description: "Игнорировать игрока"}
+  tpa: {description: "Запрос телепортации"}
+  tpaccept: {description: "Принять запрос"}
+  tpdeny: {description: "Отклонить запрос"}
+  shop: {description: "Магазин"}
+  list: {description: "Игроки онлайн"}
+  admin: {description: "Управление администраторами (владелец)"}
+  ban: {description: "Бан"}
+  unban: {description: "Разбан"}
+  kick: {description: "Кик"}
+  mute: {description: "Мут"}
+  unmute: {description: "Размут"}
+  warn: {description: "Предупреждение"}
+  history: {description: "История наказаний"}
+  tp: {description: "Телепорт к игроку"}
+  tphere: {description: "Телепорт игрока к себе"}
+  spec: {description: "Режим наблюдения"}
+  vanish: {description: "Невидимость"}
+  gm: {description: "Игровой режим (владелец)"}
+  heal: {description: "Лечение (владелец)"}
+  feed: {description: "Голод (владелец)"}
+  give: {description: "Выдать предмет (владелец)"}
+  eco: {description: "Экономика (владелец)"}
+  ahadmin: {description: "Управление аукционом"}
+  logs: {description: "Журнал админ-действий (владелец)"}
+  santik: {description: "Служебные команды SANTIK (владелец)"}
